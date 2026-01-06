@@ -15,7 +15,6 @@ body {
   min-height: 100vh;
 }
 
-/* Верхнее голубое поле — панель */
 .header {
   position: relative;
   background: DarkBlue;
@@ -27,7 +26,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Флаг локализации */
 .lang-btn {
   position: absolute;
   top: 50%;
@@ -52,7 +50,6 @@ body {
 }
 .lang-btn img:hover { transform: scale(1.1); }
 
-/* Таблица */
 table {
   width: 98%;
   max-width: 600px;
@@ -73,10 +70,9 @@ tr:hover { background: #f1f1f1; }
   vertical-align: middle;
 }
 
-/* Изменение цвета кнопки загрузки */
 .download-btn {
   padding: 5px 0;
-  background: DarkBlue; /* Новый цвет для кнопки */
+  background: DarkBlue; 
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -84,9 +80,8 @@ tr:hover { background: #f1f1f1; }
   width: 100%;
   text-align: center;
 }
-.download-btn:hover { background: #003366; } /* Более темный оттенок синего при наведении */
+.download-btn:hover { background: #003366; } 
 
-/* Изменение цвета кнопки Google Drive */
 .drive-btn {
   display: flex;
   align-items: center;
@@ -94,7 +89,7 @@ tr:hover { background: #f1f1f1; }
   gap: 10px;
   width: 320px;
   margin: 10px auto 25px;
-  background: DarkBlue; /* Новый цвет для кнопки Google Drive */
+  background: DarkBlue; 
   color: white;
   text-decoration: none;
   text-align: center;
@@ -105,7 +100,7 @@ tr:hover { background: #f1f1f1; }
   transition: background 0.3s, transform 0.2s;
 }
 .drive-btn:hover {
-  background: #003366; /* Более темный оттенок синего при наведении */
+  background: #003366; 
   transform: translateY(-1px);
 }
 .drive-btn img {
@@ -115,15 +110,14 @@ tr:hover { background: #f1f1f1; }
   display: block;
 }
 
-/* Исправление выравнивания текста "Не нашли то что искали?" */
+
 .drive-text {
-  text-align: center; /* Выравнивание по центру */
+  text-align: center; 
   margin-top: 15px;
   font-weight: bold;
   color: #333;
 }
 
-/* Мобильная адаптация */
 @media (max-width: 600px) {
   table, thead, tbody, th, td, tr { display: block; width: 100%; }
   thead { display: none; }
@@ -237,7 +231,6 @@ async function fetchReleases() {
 
 fetchReleases();
 
-// Локализация
 let lang = localStorage.getItem("lang") || "ru";
 const langBtn = document.getElementById("lang-toggle");
 
@@ -278,4 +271,5 @@ applyLanguage();
 
 </body>
 </html>
+
 
