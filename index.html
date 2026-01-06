@@ -44,8 +44,22 @@
 
     .buttons { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     .buttons img { width: 150px; max-width: 45vw; cursor: pointer; }
+
     .content { padding: 20px; max-width: 800px; margin: 0 auto; text-align: center; }
     img { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+
+    /* === SCREENSHOTS PANEL === */
+    .screenshots {
+      margin: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .screenshots img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
     .telegram-link {
       margin-top: 40px;
       display: flex;
@@ -111,6 +125,13 @@
       с внедрёнными нововведениями. Отличае правой ветви, не только в другом подходе к тем или иным идеям, но ещё и опенсорсностью проекта.
     </p>
 
+    <!-- SCREENSHOTS -->
+    <div class="screenshots">
+      <img src="images/screen1.png" alt="Screenshot 1">
+      <img src="images/screen2.png" alt="Screenshot 2">
+      <img src="images/screen3.png" alt="Screenshot 3">
+    </div>
+
     <div class="telegram-link">
       <img src="images/telegram.png" alt="Telegram">
       <a id="telegram-text" href="https://t.me/Ekrapina_Sandbox_Right_Branch" target="_blank">— ESB:RB Telegram</a>
@@ -162,5 +183,3 @@
 
 </body>
 </html>
-
-
